@@ -1,0 +1,105 @@
+/* Resetear estilos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #CCCCCC;
+    padding: 20px 0;
+}
+
+.header-paginas {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.img-header{
+    width: 20%;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+}
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.microfono {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+p {
+    text-align: center;
+}
+
+strong {
+    color: black;
+    font-weight: bold;
+}
+
+.principal>p {
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.img-footer {
+    width: 120px;
+    float: center;
+    margin: 0 20px 20px 0;
+}
