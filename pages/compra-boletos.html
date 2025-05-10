@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBREVIVIENDO LO BUENO</title>
+    <link rel="stylesheet" href="../styles/compra-boletos.css"> <!-- Enlace al CSS externo -->
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li class="elemento-navegacion"><a href="../index.html">Inicio</a></li>
+            <li class="elemento-navegacion"><a href="../index.html">Próximos eventos</a></li>
+            <li class="elemento-navegacion"><a href="#">Formulario</a></li>
+            <!-- <li class="elemento-navegacion"><a href="#">Perfil</a></li>
+            <li class="elemento-navegacion"><a href="#">Contacto</a></li> -->
+        </ul>
+    </nav>
+
+    <h1>REGISTRO PARA LOS EVENTOS</h1>
+    <form id="formulario" action="" method="post">
+        <section>
+            <h2>Información Personal</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </section>
+        <section>
+            <h2>Selección de Concierto</h2>
+            <label for="concierto"></label>
+            <select id="concierto" name="concierto" required>
+                <option value="">Seleccione un evento:</option>
+                <option value="valentin-elizalde">Valentín Elizalde - Fecha: 29/ Mayo / 2025</option>
+                <option value="juan-gabriel">Juan Gabriel - Fecha: 30 / Mayo / 2025</option>
+                <option value="michael-jackson">Michael Jackson - Fecha: 31 / Mayo / 2025</option>
+            </select>
+            <label for="cantidad-entradas">Cantidad de entradas:</label>
+            <input type="number" id="cantidad-entradas" name="cantidad-entradas" min="1" required>
+        </section>
+        <section>
+    <h2>Método de Pago</h2>
+    
+    <label for="tarjeta">Número de tarjeta:</label>
+    <input type="text" id="tarjeta" name="tarjeta" placeholder="1234 5678 9012 3456" required>
+
+    <label for="vencimiento">Fecha de vencimiento:</label>
+    <input type="date" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+        </section>
+
+
+        <button type="submit">Registrar</button>
+    </form>
+    <footer>
+           
+            <p class="copyright">&copy Copyright Reviviendo lo bueno - 2025</p>
+        </p>
+    </footer>
+</body>
+</html>
