@@ -5,19 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Eternity Live</title>
-        <link rel="stylesheet" href="./styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    </head>
+        <link rel="stylesheet" href="./styles/index.css">
+<!--         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+ -->    </head>
     
     <body>
         <header>
             <div class="header-paginas">
-                <h1><img class="img-header" src="./img/otros/logo.jpg"></h1>
+                
                 <nav>
                     <ul class="navegacion">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#proximos-eventos">Próximos Eventos</a></li>
-                        <li><a href="./pages/compra-boletos.html">Contacto</a></li>
+                        <li class="elemento-navegacion"><a href="#">Inicio</a></li>
+                        <li class="elemento-navegacion"><a href="#proximos-eventos">Próximos eventos</a></li>
+                        <li class="elemento-navegacion"><a href="./pages/compra-boletos.html">Formulario</a></li>
+                        <!-- <li class="elemento-navegacion"><a href="#">Perfil</a></li>
+                        <li class="elemento-navegacion"><a href="#">Contacto</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -28,28 +30,48 @@
         <main>
             <section class="principal">
                 
-                <h2 class="titulo-principal">Sobre Reviviendo lo bueno</h2>
-                
+                <h1 class="titulo-principal">Eternity Live</h1>
+              <section class="contenedor-boxmodel">  
                 <img class="microfono" src="./img/otros/microfono con alas.jpg" alt="Microfono con alas y una chica enfrente, que hace alusión a los cantantes fallecidos">
-
+                <section class="texto-box">
                 <p> En un giro innovador y emocionante, la empresa <strong>Eternity Live</strong> ha revolucionado la industria del entretenimiento al ofrecer conciertos únicos con leyendas de la música revividas. A través de una tecnología avanzada y un equipo de expertos, Eternity Live es capaz de revivir a cantantes fallecidos durante 4 días, permitiéndoles regresar a los escenarios y ofrecer actuaciones inolvidables. Desde Elvis Presley hasta Amy Winehouse, los fans pueden experimentar la magia de ver a sus ídolos en vivo y en directo, cantando sus canciones más emblemáticas con la misma pasión y energía que los hizo famosos en vida. Los conciertos de Eternity Live son una oportunidad única para que los fans se conecten con la música y la memoria de sus artistas favoritos de una manera que nunca antes había sido posible.</p>
                 <br>
                 
-                <p id="mision"><em><strong>Nuestra misión es:</strong></em> "Unir a las generaciones a través de la música, reviviendo el legado de los grandes artistas y ofreciendo experiencias emocionales y auténticas. Nos comprometemos a preservar la esencia y la pasión de los artistas que nos han inspirado, y a crear momentos inolvidables para los fans que les permitan conectar con la música de una manera profunda y significativa".</p>   
+                <p id="mision"><em><strong>Nuestra misión es:</strong></em> "Unir a las generaciones a través de la música, reviviendo el legado de los grandes artistas y ofreciendo experiencias emocionales y auténticas. Nos comprometemos a preservar la esencia y la pasión de los artistas que nos han inspirado, y a crear momentos inolvidables para los fans que les permitan conectar con la música de una manera profunda y significativa".</p>  
+                </section> 
+                </section>
             </section>
             
             <section id="proximos-eventos">
-                <h3 class="titulo-principal">Próximos eventos</h3>
-                <p>Nuestro establecimiento esta ubicado en el corazón de la ciudad</p>
-
-                
+                <h2 id="proximos-eventos" class="titulo-principal">Próximos eventos</h2>
+        
 
             </section>
 
         </main>
+        <section class="nuestros-artistas">
+         <figure> <!-- Separara las imagenes -->
+            <img class="img-idol" src="./img/otros/juanga.jpg">
+            <figcaption class="texto-imagen">Juan Gabriel </figcaption> <!-- Nos va a permitir agregar un texto abajo de la imagen -->
+            <figcaption class="texto-imagen">29 / Mayo / 2025</figcaption>
+         </figure>
+         <figure>
+            <a href="./pages/michael.html">
+            <img class="img-idol" src="./img/otros/michael.jpg">
+            <figcaption class="texto-imagen">Michael Jackson </figcaption>
+            <figcaption class="texto-imagen">30 / Mayo / 2025</figcaption>
+            </a>
+        </figure>
+        <figure>
             
+            <img class= "img-idol" src="./img/otros/vale.jpg" >
+            <figcaption class="texto-imagen">Valentin Elizalde </figcaption>
+            <figcaption class="texto-imagen">31 / Mayo / 2025</figcaption>
+            
+        </figure>
+            </section>
         <footer>
-            <img class="img-footer" src="./img/otros/logo_footer.jpg">
+           
             <p class="copyright">&copy Copyright Reviviendo lo bueno - 2025</p>
         </footer>
         
