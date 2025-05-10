@@ -1,0 +1,154 @@
+/* Resetear estilos del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaración de variables para reutilizar colores */
+:root{
+        --color_fondo: #3071b5; 
+        --color_fondo_body:#dde5ef;
+        --color_texto:#fff;
+        --color_texto_boton:#3071b5;
+        --color_botones:#fff;
+        --color_acento: #3071b5;
+        --fuente-principal:"Arial",serif;
+        --padding_tarjetas:5px;
+
+
+}
+
+button {
+  background: transparent;
+  border: 2px solid var(--color_botones);
+  color: var(--color_botones);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Asegura que el contenido no quede oculto detrás del menú */
+body {
+    margin: 0;
+    padding-top: 60px; /* Ajusta este valor si cambias la altura del menú */
+    background-color:var(--color_fondo_body);
+    font-family: var(--fuente-principal);
+    color: var(--color_texto);
+    
+}
+
+button:hover {
+  background-color: var(--color_botones);
+  color: var(--color_fondo);
+}
+
+/* Menú de navegación fijo */
+nav {
+    background-color: var(--color_fondo);
+    border: 1px solid white;
+    padding: 10px;
+    position: fixed;     /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* Asegura que esté por encima de otros elementos */
+}
+
+nav ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento-navegacion a{
+    text-decoration: none;
+    color: white;
+}
+
+.elemento-navegacion a:hover{
+     color: var(--color_botones);
+    text-decoration: underline overline;
+}
+
+
+/* Campos de entrada sin relleno */
+input,
+select {
+    width: 100%;
+    margin: 8px 0 16px 0;
+    padding: 10px;
+    background-color: white;
+    color: var(--color_texto_boton);
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Placeholder opcional */
+input::placeholder {
+    color: var(--color_texto_boton);
+}
+
+
+option{
+    display: block;
+    background-color: var(--color_fondo);
+    color: var(--color_texto)
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color_fondo);
+    border-radius: 10px;
+}
+
+/* Estilo para cada sección como cuadro */
+form section {
+    border: 2px solid var(--color_botones);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* Título centrado */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--color_fondo)
+}
+
+/* Botón ya está bien con tu clase actual */
+
+/* Mejora de etiqueta para separar bien los campos */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--color_fondo); /* igual que nav */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}

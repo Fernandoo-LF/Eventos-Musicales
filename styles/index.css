@@ -1,0 +1,132 @@
+/* Resetear estilos del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaración de variables para reutilizar colores */
+:root{
+        --color_fondo: #3071b5; 
+        --color_fondo_body:#dde5ef;
+        --color_texto:#3071b5;
+        --color_botones:#fff;
+        --color_acento: #3071b5;
+        --fuente-principal:"Arial",serif;
+        --padding_tarjetas:5px;
+}
+
+/* Menú de navegación fijo */
+nav {
+    background-color: var(--color_fondo);
+    border: 1px solid white;
+    padding: 10px;
+    position: fixed;     /* Fija el menú en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* Asegura que esté por encima de otros elementos */
+}
+
+nav ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento-navegacion a{
+    text-decoration: none;
+    color: white;
+}
+
+.elemento-navegacion a:hover{
+     color: var(--color_botones);
+    text-decoration: underline overline;
+}
+
+/* Asegura que el contenido no quede oculto detrás del menú */
+body {
+    margin: 0;
+    padding-top: 60px; /* Ajusta este valor si cambias la altura del menú */
+    background-color:var(--color_fondo_body);
+    font-family: var(--fuente-principal);
+    color: var(--color_texto);
+    
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--color_texto)
+}
+h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--color_texto)
+}
+.banner {
+    width: 100%;
+    max-height: 300px;  /* o lo que prefieras */
+    object-fit: cover;
+}
+
+.microfono {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto;  /* centra horizontalmente */
+    border-radius: 8px; /* opcional: esquinas redondeadas */
+    box-shadow: 0 4px 8px rgb(0,0,0,2);
+    float: left;
+}
+.contenedor-boxmodel {
+
+    display: flex;
+    align-items: flex-start; /* Alinea arriba */
+    gap: 20px; /* Espacio entre imagen y texto */
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.text-box{
+  flex: 1; /* Para que el texto tome el espacio restante */
+   
+}
+.nuestros-artistas {
+    display: flex;
+    justify-content: space-around; /* o space-between o gap */
+    margin: 40px auto;
+    max-width: 900px; /* para limitar el ancho si quieres */
+}
+
+.img-idol {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.texto-imagen{
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color_fondo); /* igual que nav */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
