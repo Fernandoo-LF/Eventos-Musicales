@@ -1,0 +1,151 @@
+/* Resetear estilos del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Declaración de variables para reutilizar colores */
+  :root{
+    --color_fondo: #3642F8; 
+    --color_fondo_body:#C4EDFB;
+    --color_texto:#000000;
+    --color_texto_evento: white;
+    --color_botones: #fff;
+    --color_acento: #3642F8;
+    --fuente-principal: "Arial", serif;
+    --padding_tarjetas: 5px;
+  }
+  
+  /* Menú de navegación fijo */
+  nav {
+    background-color: var(--color_fondo);
+    border: 1px solid white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .elemento-navegacion a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .elemento-navegacion a:hover{
+    color: var(--color_botones);
+    text-decoration: underline overline;
+  }
+  
+  /* Asegura que el contenido no quede oculto detrás del menú */
+  body {
+    margin: 0;
+    padding-top: 60px;
+    background-color: var(--color_fondo_body);
+    font-family: var(--fuente-principal);
+    color: var(--color_texto);
+  }
+  
+  .titulo-principal{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: var(--color_texto)
+  }
+  
+  .img-juan{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .contenedor-boxmodel {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .text-box{
+    flex: 1;
+  }
+  
+  #proximos-eventos{
+    text-align: center;
+  }
+  
+  .tarjeta-evento {
+    background-color: var(--color_acento);
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    color: var(--color_texto_evento);
+  }
+  
+  .titulo-evento {
+    font-size: 1.2em;
+    color: var(--color_texto_evento);
+    margin-bottom: 10px;
+  }
+  
+  .boton-artista {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF6833;
+    color: var(--color_texto_evento);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-artista:hover {
+    background-color: #d62828;
+  }
+  
+  .brilla-juan{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 900px;
+  }
+  
+  .texto-imagen{
+    text-align: center;
+  }
+  
+  footer {
+    background-color: var(--color_fondo);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .copyright {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
