@@ -1,6 +1,7 @@
 ## Descripción del Proyecto
 
-Este ejercicio se divide en dos partes: HTML y CSS; y se realiza en equipos.
+Este ejercicio se divide en dos partes: HTML y CSS; y fue realizado por:
+Francisco Caldera, Lilian Delgado, Cecilia Gutierrez, Fernando Lopez y Veronica Vazquez
 
 🎯 **El objetivo** es crear una página estática de eventos con temática libre (música, cultura, conferencias, presentaciones, etc).
 
